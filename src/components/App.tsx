@@ -1,11 +1,13 @@
-import React from 'react';
+import * as Variables from '../styles';
+import React, { useEffect } from 'react';
 import Constants from 'expo-constants';
 import { registerRootComponent } from 'expo';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet,View } from 'react-native';
 import { Header } from './Header/Header';
 import { Main } from './Main/Main';
 
 const App = () => {
+
 	return (
 		<>
 			<View style={styles.status}/>
@@ -20,11 +22,11 @@ const App = () => {
 const styles = StyleSheet.create({
 	status: {
 		height: Constants.statusBarHeight,
-		backgroundColor: '#000000'
+		backgroundColor: Variables.color_black
 	},
 	app: {
 		flex: 1,
-		backgroundColor: '#fff',
+		backgroundColor: Variables.color_white,
 		alignItems: 'center',
 		justifyContent: 'center',
 	},

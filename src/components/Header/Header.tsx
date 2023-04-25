@@ -1,3 +1,4 @@
+import * as Variables from '../../styles';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
@@ -13,14 +14,14 @@ export const Header = () => {
 const styles = StyleSheet.create({
 	header: {
 		height: 100,
-		backgroundColor: '#000000',
+		backgroundColor: Variables.color_black,
 		alignItems: 'flex-start',
 		justifyContent: 'center',
 		width: '100%',
 		padding: 25
 	},
 	title: {
-		color: '#ffffff',
+		color: Variables.color_white,
 		fontSize: 25
 	}
 });
