@@ -1,5 +1,5 @@
-import * as Variables from '../../styles';
 import React from 'react';
+import Variables from '../../../styles/Variables';
 import { StyleSheet, Text, View } from 'react-native';
 
 
@@ -13,15 +13,15 @@ export const Header = () => {
 
 const styles = StyleSheet.create({
 	header: {
-		height: 100,
-		backgroundColor: Variables.color_black,
+		height: Variables.spacing.header,
+		backgroundColor: Variables.color.black,
 		alignItems: 'flex-start',
 		justifyContent: 'center',
 		width: '100%',
-		padding: 25
+		padding: Variables.spacing.m
 	},
 	title: {
-		color: Variables.color_white,
-		fontSize: 25
+		color: Variables.color.white,
+		fontSize: Variables.font.size.l
 	}
 });
